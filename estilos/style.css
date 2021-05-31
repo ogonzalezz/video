@@ -1,0 +1,105 @@
+* {
+  color: black;
+  font-family: Tahoma;
+  font-size: 1.125rem;
+}
+
+body {
+  background: url(../media/logoMarco.svg) no-repeat; 
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  animation: backgroundMovement 150s infinite;
+}
+
+@keyframes backgroundMovement {
+  from {background-position: 0 0;}
+  to {background-position: -600px 0px;}
+}
+
+.togglerIconTrue {
+	  animation: togglerRotationTrue 0.5s forwards;
+    transform-origin: right 50%;
+}
+
+@keyframes togglerRotationTrue {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-90deg);}
+}
+
+.togglerIconFalse {
+  	animation: togglerRotationFalse 0.5s forwards;
+    transform-origin: right 50%;
+}
+
+@keyframes togglerRotationFalse {
+    from {transform: rotate(-90deg);}
+    to {transform: rotate(0deg);}
+}
+
+#gif{
+  height: 100%;
+  width: 100%;
+}
+
+.logo{
+  height:auto;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h1 {
+  border-right: solid 3px #161616;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 2.5rem;
+  animation: animatedText 3.5s steps(29,end) infinite;
+  color: #E0171F;
+}
+
+h2 {
+  color: #E0171F;
+  font-weight: bold;
+}
+
+h3 {
+  color: #E0171F;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+@keyframes animatedText{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+/* cursor animations */
+
+@keyframes animatedCursor{
+  from{border-right-color: #161616;}
+  to{border-right-color: transparent;}
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #E0171F;
+}
+
+.cta{
+  background-color: #E0171F;
+  color: white;
+}
+
+.cta:hover{
+  background-color: white;
+  border: 1px solid #E0171F;
+}
+
+#divDev {
+  background-color: white;
+  border-radius: 5px;
+}
